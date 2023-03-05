@@ -1,0 +1,221 @@
+/** @format */
+
+.productDetails {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+.productInfoContainer {
+  border: 1px solid #d4d5d9;
+  display: flex;
+  width: 50%;
+  min-height: 70%;
+}
+.productImg {
+  width: 45%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.productImg img {
+  width: 100%;
+  height: 100%;
+}
+.productInfo {
+  padding: 30px 40px;
+  width: 45%;
+  border-left: 1px solid #d4d5d9;
+}
+.productTitle {
+  padding: 0 20px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.productDesc {
+  color: #535665;
+  padding: 20px 0;
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  text-align: center;
+  padding: 4px 15px;
+  border: 1px solid #eaeaec;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.rating img{
+  margin-left: 4px;
+}
+.productPrice {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  padding: 20px 0 10px;
+}
+.productDiscount {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ff905a;
+}
+.productTax {
+  color: #03a685;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 5px 10px 0 0;
+  padding: 0px 0 20px;
+}
+.productBtn {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 18px;
+  display: flex;
+}
+.addToBag {
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #ff3e6c;
+  border: 1px solid #ff3e6c;
+  color: #fff;
+  min-width: 170px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 14px 0;
+  text-transform: uppercase;
+  margin-right: 3%;
+}
+.addToBag:hover {
+  background-color: white;
+  color: #ff3e6c;
+}
+.wishlist {
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #d4d5d9;
+  background-color: #fff;
+  letter-spacing: 0.4px;
+  padding: 14px 0;
+  text-transform: uppercase;
+  min-width: 170px;
+  cursor: pointer;
+}
+.wishlist:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .productInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 85%;
+    height: 85vh;
+  }
+  .productImg {
+    width: 85%;
+    height: 40vh;
+    padding: 2px;
+  }
+  .productImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .productInfo {
+    width: 85%;
+    height: 50vh;
+    border-left: 0;
+    padding: 2px 5px;
+  }
+  .productTitle {
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .productDesc {
+    padding: 5px 0;
+    font-size: 15px;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .rating {
+    height: 28px;
+    display: none;
+  }
+  .productPrice {
+    font-size: 18px;
+    padding: 14px 0 6px;
+    text-align: center;
+  }
+  .productDiscount {
+    font-size: 18px;
+  }
+  .productTax {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .productBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 10px;
+  }
+  .addToBag {
+    min-width: 45%;
+    border-radius: 4px;
+    padding: 8px 0;
+    font-size: 10px;
+  }
+  .wishlist {
+    letter-spacing: 0;
+    padding: 8px 0;
+    min-width: 45%;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .productInfoContainer {
+    height: 85vh;
+    width: 85%;
+  }
+  .productInfo {
+    padding: 20px;
+  }
+  .addToBag {
+    min-width: 65%;
+    padding: 10px 0;
+  }
+  .wishlist {
+    padding: 10px 0;
+    min-width: 66%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1450px) {
+  .productInfoContainer {
+    height: 80vh;
+    width: 70%;
+  }
+
+  .productImg img {
+    height: 100%;
+  }
+}

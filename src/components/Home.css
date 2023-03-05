@@ -1,0 +1,65 @@
+/** @format */
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f7fc;
+  padding: 30px 0;
+  height: auto;
+}
+.filterSort {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #6e78ac;
+  border: 1px solid lightgray;
+  width: 15%;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.filterMenus {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
+}
+.brandsList {
+  position: relative;
+  top: 0;
+  left: 65%;
+  list-style: none;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    width: 35%;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+  .filterMenus {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .filter {
+    width: 20%;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .filter {
+    width: 15%;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+}

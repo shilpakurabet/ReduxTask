@@ -1,0 +1,75 @@
+/** @format */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 60px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.navbarLogo {
+  width: 12%;
+  height: 12%;
+}
+.navbarLogo:hover {
+  cursor: pointer;
+}
+.navbarLogo img {
+  width: 100%;
+  height: 100%;
+}
+.searchBox {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.searchBox input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 8px 8px;
+  }
+  .searchBox {
+    padding: 2px;
+    width: 45%;
+  }
+  .searchBox input {
+    padding: 4px;
+    font-size: 12px;
+    margin-left: 1px;
+    width: 100%;
+  }
+  .navbarLogo {
+    width: 35%;
+    height: 35%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .navbarLogo {
+    width: 16%;
+    height: 16%;
+  }
+  .header {
+    padding: 8px 25px;
+  }
+  .searchBox {
+    padding: 2px;
+    width: 28%;
+  }
+  .searchBox input {
+    width: 100%;
+  }
+}
